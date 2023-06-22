@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr. Montir</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../dist/img/logo/logo-vertical.png"
+    />
+
+    <!-- CSS Style -->
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header
+      class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
+    >
+      <div class="container mx-auto">
+        <div class="realtive flex items-center justify-between">
+          <div class="flex items-center md:px-4 mx-auto md:mx-0">
+            <a href="../index.html">
+              <img
+                src="../dist/img/logo/logo-horizontal.png"
+                class="w-44 md:w-48 lg:w-56 my-4 md:my-7 lg:my-5"
+                alt="Logo"
+              />
+            </a>
+          </div>
+          <div class="flex items-center md:px-4 md:order-2">
+            <!-- Hamburger Menu -->
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute top-4 right-4 block md:hidden z-[99]"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <!-- Navbar -->
+            <nav
+              id="nav-menu"
+              class="hidden md:static md:flex w-screen md:w-auto h-screen md:h-auto md:top-full md:items-center md:justify-between bg-white md:bg-transparent"
+            >
+              <ul
+                class="block relative md:flex flex-col md:flex-row font-medium space-x-0 md:space-x-4 lg:space-x-8 z-40 md:z-0 mt-20 md:mt-0"
+              >
+                <!-- Menu -->
+                <li>
+                  <!-- Menu Button -->
+                  <button
+                    id="mega-menu-icons-dropdown-button"
+                    data-dropdown-toggle="mega-menu-icons-dropdown"
+                    class="hidden md:flex items-center justify-between w-full py-2 pl-3 pr-4 font-bold text-primary md:w-auto md:border-0 hover:text-opacity-80 md:p-0 text-base mt-4"
+                  >
+                    Menu
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5 ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <!-- Menu Body -->
+                  <div
+                    id="mega-menu-icons-dropdown"
+                    class="relative hidden md:absolute md:z-10 md:w-auto md:text-sm md:bg-white md:border md:border-gray-200 md:rounded-lg md:shadow-md"
+                  >
+                    <div class="p-4 pb-0 md:pb-4">
+                      <ul
+                        class="space-y-4 font-medium"
+                        aria-labelledby="mega-menu-icons-dropdown-button"
+                      >
+                        <!-- Halaman Utama -->
+                        <li class="group">
+                          <a
+                            href="../index.html"
+                            class="flex items-center text-slate-500 group-hover:text-primary"
+                          >
+                            <span class="sr-only">Halaman Utama</span>
+                            <svg
+                              class="w-4 h-4 mr-2 text-slate-500 group-hover:text-primary"
+                              aria-hidden="true"
+                              focusable="false"
+                              fill="currentColor"
+                              viewBox="0 -960 960 960"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"
+                              />
+                            </svg>
+                            Halaman Utama
+                          </a>
+                        </li>
+                        <!-- Produk -->
+                        <li class="group">
+                          <a
+                            href="../product/index.html"
+                            class="flex items-center text-slate-500 group-hover:text-primary"
+                          >
+                            <span class="sr-only">Produk</span>
+                            <svg
+                              class="w-4 h-4 mr-2 text-slate-500 group-hover:text-primary"
+                              aria-hidden="true"
+                              fill="currentColor"
+                              viewBox="0 -960 960 960"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M120-142v-492q-14-2-27-20t-13-39v-127q0-23 18-41.5t42-18.5h680q23 0 41.5 18.5T880-820v127q0 21-13 39t-27 20v492q0 23-18.5 42.5T780-80H180q-24 0-42-19.5T120-142Zm700-551v-127H140v127h680ZM360-423h240v-60H360v60Z"
+                              />
+                            </svg>
+                            Produk
+                          </a>
+                        </li>
+                        <!-- Servis -->
+                        <li class="group">
+                          <a
+                            href="../service/index.html"
+                            class="flex items-center text-slate-500 group-hover:text-primary"
+                          >
+                            <span class="sr-only">Servis</span>
+                            <svg
+                              class="w-4 h-4 mr-2 text-slate-500 group-hover:text-primary"
+                              aria-hidden="true"
+                              fill="currentColor"
+                              viewBox="0 -960 960 960"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"
+                              />
+                            </svg>
+                            Servis
+                          </a>
+                        </li>
+                        <!-- FAQ -->
+                        <li class="group">
+                          <a
+                            href="#"
+                            class="flex items-center text-slate-500 group-hover:text-primary"
+                          >
+                            <span class="sr-only">FAQ</span>
+                            <svg
+                              class="w-4 h-4 mr-2 text-slate-500 group-hover:text-primary"
+                              aria-hidden="true"
+                              fill="currentColor"
+                              viewBox="0 -960 960 960"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M484-247q16 0 27-11t11-27q0-16-11-27t-27-11q-16 0-27 11t-11 27q0 16 11 27t27 11Zm-35-146h59q0-26 6.5-47.5T555-490q31-26 44-51t13-55q0-53-34.5-85T486-713q-49 0-86.5 24.5T345-621l53 20q11-28 33-43.5t52-15.5q34 0 55 18.5t21 47.5q0 22-13 41.5T508-512q-30 26-44.5 51.5T449-393Zm31 313q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"
+                              />
+                            </svg>
+                            FAQ
+                          </a>
+                        </li>
+                        <!-- Kontak Kami -->
+                        <li class="group">
+                          <a
+                            href="#"
+                            class="flex items-center text-slate-500 group-hover:text-primary"
+                          >
+                            <span class="sr-only">Kontak Kami</span>
+                            <svg
+                              class="w-4 h-4 mr-2 text-slate-500 group-hover:text-primary"
+                              aria-hidden="true"
+                              fill="currentColor"
+                              viewBox="0 -960 960 960"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M144-40v-60h672v60H144Zm0-820v-60h672v60H144Zm336 416q50 0 84-34t34-84q0-50-34-84t-84-34q-50 0-84 34t-34 84q0 50 34 84t84 34ZM132-160q-24 0-42-18t-18-42v-520q0-26 18-43t42-17h696q24 0 42 18t18 42v520q0 24-18 42t-42 18H132Zm88-60h520q-49-63-120.5-94.5T480-346q-69 0-139 31.5T220-220Z"
+                              />
+                            </svg>
+                            Kontak Kami
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- Searching -->
+                <li>
+                  <form
+                    class="md:w-[250px] lg:w-[400px] mt-44 md:mt-0 ml-4 md:ml-0"
+                  >
+                    <label
+                      for="default-search"
+                      class="mb-2 text-sm font-medium text-gray-900 sr-only"
+                      >Cari</label
+                    >
+                    <div class="relative">
+                      <div
+                        class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-5 h-5 text-gray-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input
+                        type="text"
+                        id="default-search"
+                        class="block w-[97%] md:w-full py-4 md:p-4 pl-12 md:pl-10 pr-24 md:pr-20 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-primary focus:border-primary"
+                        placeholder="Cari produk, service, dan lainnya ..."
+                        required
+                      />
+                      <button
+                        type="submit"
+                        class="text-white absolute right-6 md:right-2.5 bottom-2 md:bottom-2.5 bg-primary hover:bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-md text-sm px-5 md:px-4 py-2"
+                      >
+                        Cari
+                      </button>
+                    </div>
+                  </form>
+                </li>
+                <!-- Login & Register -->
+                <li>
+                  <div class="flex mx-auto justify-center -mt-40 md:mt-0">
+                    <!-- Login -->
+                    <a
+                      href="#"
+                      class="mx-2 px-12 md:px-5 lg:px-7 py-2 md:py-3 rounded-lg bg-transparent text-primary border-2 border-primary hover:bg-primary hover:text-white hover:border-transparent transition duration-300"
+                    >
+                      Masuk
+                    </a>
+                    <!-- Register -->
+                    <a
+                      href="#"
+                      class="mx-2 px-12 md:px-5 lg:px-7 py-2 md:py-3 rounded-lg bg-primary text-white border-2 border-transparent hover:bg-transparent hover:text-primary hover:border-primary transition duration-300"
+                    >
+                      Daftar
+                    </a>
+                  </div>
+                </li>
+                <!-- Menu for Smartphone -->
+                <li>
+                  <div class="flex md:hidden">
+                    <ul class="w-full ml-8 mt-36 space-y-5 font-medium text-xl">
+                      <!-- Halaman Utama -->
+                      <li class="group">
+                        <a
+                          href="../index.html"
+                          class="flex items-center text-slate-500 group-hover:text-primary"
+                        >
+                          <span class="sr-only">Halaman Utama</span>
+                          <svg
+                            class="w-7 h-7 mr-4 text-slate-500 group-hover:text-primary"
+                            aria-hidden="true"
+                            focusable="false"
+                            fill="currentColor"
+                            viewBox="0 -960 960 960"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"
+                            />
+                          </svg>
+                          Halaman Utama
+                        </a>
+                      </li>
+                      <!-- Produk -->
+                      <li class="group">
+                        <a
+                          href="../product/index.html"
+                          class="flex items-center text-slate-500 group-hover:text-primary"
+                        >
+                          <span class="sr-only">Produk</span>
+                          <svg
+                            class="w-7 h-7 mr-4 text-slate-500 group-hover:text-primary"
+                            aria-hidden="true"
+                            fill="currentColor"
+                            viewBox="0 -960 960 960"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M120-142v-492q-14-2-27-20t-13-39v-127q0-23 18-41.5t42-18.5h680q23 0 41.5 18.5T880-820v127q0 21-13 39t-27 20v492q0 23-18.5 42.5T780-80H180q-24 0-42-19.5T120-142Zm700-551v-127H140v127h680ZM360-423h240v-60H360v60Z"
+                            />
+                          </svg>
+                          Produk
+                        </a>
+                      </li>
+                      <!-- Servis -->
+                      <li class="group">
+                        <a
+                          href="../service/index.html"
+                          class="flex items-center text-slate-500 group-hover:text-primary"
+                        >
+                          <span class="sr-only">Servis</span>
+                          <svg
+                            class="w-7 h-7 mr-4 text-slate-500 group-hover:text-primary"
+                            aria-hidden="true"
+                            fill="currentColor"
+                            viewBox="0 -960 960 960"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"
+                            />
+                          </svg>
+                          Servis
+                        </a>
+                      </li>
+                      <!-- FAQ -->
+                      <li class="group">
+                        <a
+                          href="#"
+                          class="flex items-center text-slate-500 group-hover:text-primary"
+                        >
+                          <span class="sr-only">FAQ</span>
+                          <svg
+                            class="w-7 h-7 mr-4 text-slate-500 group-hover:text-primary"
+                            aria-hidden="true"
+                            fill="currentColor"
+                            viewBox="0 -960 960 960"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M484-247q16 0 27-11t11-27q0-16-11-27t-27-11q-16 0-27 11t-11 27q0 16 11 27t27 11Zm-35-146h59q0-26 6.5-47.5T555-490q31-26 44-51t13-55q0-53-34.5-85T486-713q-49 0-86.5 24.5T345-621l53 20q11-28 33-43.5t52-15.5q34 0 55 18.5t21 47.5q0 22-13 41.5T508-512q-30 26-44.5 51.5T449-393Zm31 313q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"
+                            />
+                          </svg>
+                          FAQ
+                        </a>
+                      </li>
+                      <!-- Kontak Kami -->
+                      <li class="group">
+                        <a
+                          href="#"
+                          class="flex items-center text-slate-500 group-hover:text-primary"
+                        >
+                          <span class="sr-only">Kontak Kami</span>
+                          <svg
+                            class="w-7 h-7 mr-4 text-slate-500 group-hover:text-primary"
+                            aria-hidden="true"
+                            fill="currentColor"
+                            viewBox="0 -960 960 960"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M144-40v-60h672v60H144Zm0-820v-60h672v60H144Zm336 416q50 0 84-34t34-84q0-50-34-84t-84-34q-50 0-84 34t-34 84q0 50 34 84t84 34ZM132-160q-24 0-42-18t-18-42v-520q0-26 18-43t42-17h696q24 0 42 18t18 42v520q0 24-18 42t-42 18H132Zm88-60h520q-49-63-120.5-94.5T480-346q-69 0-139 31.5T220-220Z"
+                            />
+                          </svg>
+                          Kontak Kami
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Body Section Start -->
+    <section id="home" class="py-40">
+      <div class="container mx-auto">
+        <div class="w-full px-1 mb-12">
+          <h1
+            class="mb-4 font-bold text-primary text-center text-4xl md:text-5xl lg:text-6xl uppercase"
+          >
+            Layanan Servis
+          </h1>
+          <p class="lg:text-xl text-center font-semibold text-slate-500">
+            Jangan ragu, hubungi kami sekarang untuk mendapatkan layanan servis
+            yang terbaik bagi kendaraan Anda!
+          </p>
+        </div>
+        <div class="w-full">
+          <!-- Servis Kendaraan -->
+          <a
+            href="vehicle-service.html"
+            class="flex flex-col mx-auto my-10 p-2 md:p-4 lg:p-8 items-center bg-white border border-gray-200 rounded-lg shadow md:shadow-lg md:flex-row max-w-xs md:max-w-2xl lg:max-w-4xl hover:bg-gray-100"
+          >
+            <img
+              class="object-cover rounded-t-lg h-44 md:h-auto w-full md:w-80 lg:w-96 md:rounded-none md:rounded-l-lg"
+              src="../dist/img/service/mobil/4.png"
+              alt="Servis Kendaraan"
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">
+                Servis Kendaraan
+              </h5>
+              <p class="mb-3 font-normal text-slate-500 text-justify">
+                Servis kendaraan tanpa khawatir ada di sini! Nikmati layanan
+                yang cepat, efisien, dan terpercaya di bengkel kami. Jangan
+                tunda lagi, hubungi kami sekarang untuk mendapatkan penawaran
+                menarik!
+              </p>
+            </div>
+          </a>
+          <!-- Servis Berkala -->
+          <a
+            href="periodic-service.html"
+            class="flex flex-col mx-auto my-10 p-2 md:p-4 lg:p-8 items-center bg-white border border-gray-200 rounded-lg shadow md:shadow-lg md:flex-row max-w-xs md:max-w-2xl lg:max-w-4xl hover:bg-gray-100"
+          >
+            <img
+              class="object-cover rounded-t-lg h-60 md:h-auto w-full md:w-80 lg:w-96 md:rounded-none md:rounded-l-lg"
+              src="../dist/img/service/motor/1.png"
+              alt="Servis Kendaraan"
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">
+                Servis Berkala
+              </h5>
+              <p class="mb-3 font-normal text-slate-500 text-justify">
+                Waktunya untuk memberikan perhatian ekstra pada kendaraan Anda.
+                Biarkan tim ahli kami merawatnya dengan servis kendaraan
+                berkualitas tinggi. Percayakan kendaraan Anda kepada kami dan
+                nikmati perjalanan yang lebih aman dan nyaman.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Body Section End -->
+
+    <!-- Footer Section Start -->
+    <footer
+      class="relative mt-12 md:mt-20 lg:mt-36 border-2 shadow-xl lg:shadow-2xl shadow-slate-500"
+    >
+      <!-- Email -->
+      <div class="container mx-auto">
+        <div class="grid-cols-1">
+          <div class="columns-1">
+            <div
+              class="relative w-auto sm:flex block -top-[90px] lg:-top-[130px] h-56 md:h-40 lg:h-64 m-3 lg:m-2 bg-primary items-center justify-between rounded-xl lg:rounded-3xl p-5 lg:p-10 shadow-md"
+            >
+              <div class="sm:w-1/2 lg:w-2/3">
+                <h2
+                  class="text-white text-xl lg:text-4xl font-semibold lg:font-bold"
+                >
+                  Dapatkan Informasi Terbaru dari Kami
+                </h2>
+                <p
+                  class="block mt-1 lg:mt-2 text-slate-300 text-sm lg:text-lg font-medium"
+                >
+                  Dapatkan informasi terbaru dan penawaran terbaik dari kami
+                  langsung ke emailmu setiap hari.
+                </p>
+              </div>
+              <div class="sm:w-1/2 lg:w-1/3">
+                <div
+                  class="rounded-full shadow-lg lg:shadow-xl bg-white p-1.5 sm:p-2 mt-5 sm:mt-0"
+                >
+                  <form action="#" method="post">
+                    <input type="hidden" name="#" value="#" />
+                    <div class="flex items-center m-0">
+                      <div class="w-full">
+                        <input
+                          type="text"
+                          name="#"
+                          id="#"
+                          class="border-0 outline-none ml-4 w-40 xl:w-60"
+                          placeholder="Masukkan email"
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        class="bg-primary text-white rounded-full shadow-lg lg:shadow-xl px-6 lg:px-8 py-2 lg:py-3 hover:opacity-80 transition duration-300"
+                      >
+                        Kirim
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="container mx-auto">
+        <div class="relative flex-row -top-[70px]">
+          <div class="flex flex-wrap">
+            <div class="mb-12 w-full px-4 font-medium md:w-1/3">
+              <a href="../index.html">
+                <img
+                  src="../dist/img/logo/logo-horizontal.png"
+                  class="lg:w-96 mb-5"
+                  alt="Logo"
+                />
+              </a>
+              <!-- No. Telephone -->
+              <ul class="flex items-center mb-2 text-slate-500">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20"
+                    viewBox="0 -960 960 960"
+                    width="20"
+                    class="fill-current py-0"
+                  >
+                    <path
+                      d="M798-120q-129 0-251.5-57.5t-217-152q-94.5-94.5-152-217T120-798q0-18 12-30t30-12h162q14 0 25 9t13 23l26 140q2 14-.5 25.5T376-622l-96 98q42 72 105 135t139 109l94-94q9-9 23.5-13.5T670-390l138 28q14 3 23 13.5t9 24.5v162q0 18-12 30t-30 12Z"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <p class="ml-4">021 569 49 669</p>
+                </li>
+              </ul>
+              <!-- Email -->
+              <ul class="flex items-center mb-2 text-slate-500">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20"
+                    viewBox="0 96 960 960"
+                    width="20"
+                    class="fill-current py-0"
+                  >
+                    <path
+                      d="M168 864q-29 0-50.5-21.5T96 792V360q0-29 21.5-50.5T168 288h624q30 0 51 21.5t21 50.5v432q0 29-21 50.5T792 864H168Zm312-240 312-179v-85L480 539 168 360v85l312 179Z"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <p class="ml-4">mistermontir55@gmail.com</p>
+                </li>
+              </ul>
+              <!-- Alamat -->
+              <ul class="flex items-center text-slate-500">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20"
+                    viewBox="0 96 960 960"
+                    width="20"
+                    class="fill-current py-0"
+                  >
+                    <path
+                      d="M480.124 578Q514 578 538 553.876t24-58Q562 462 537.876 438t-58-24Q446 414 422 438.124t-24 58Q398 530 422.124 554t58 24ZM480 976Q319 837 239.5 721T160 504.2q0-151.2 96-239.7T480 176q128 0 224 88.5t96 239.7Q800 605 720.5 721 641 837 480 976Z"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <p class="ml-4">
+                    JI Mawar 141 Kelurahan Delod Peken, Kecamatan Tabanan,
+                    Tabanan, Bali 82113.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-12 w-full px-4 md:w-1/3">
+              <h4
+                class="font-bold text-xl text-primary text-center md:mt-5 mb-4"
+              >
+                Layanan & Ketentuan
+              </h4>
+              <ul class="block text-center font-medium text-slate-500">
+                <li class="mb-2"><a href="#">Kontak Kami</a></li>
+                <li class="mb-2"><a href="#">Mitra Kami</a></li>
+                <li class="mb-2"><a href="#">Syarat & Ketentuan</a></li>
+                <li class="mb-2"><a href="#">Kebijakan Privasi</a></li>
+              </ul>
+            </div>
+            <div class="mb-12 w-full px-4 md:w-1/3">
+              <h4
+                class="font-bold text-xl text-primary text-center md:mt-5 mb-2"
+              >
+                Sosial Media
+              </h4>
+              <div
+                class="flex flex-wrap items-center md:items-start justify-center md:justify-start"
+              >
+                <!-- Facebook -->
+                <a
+                  href="#"
+                  class="mx-4 max-w-[120px] py-4 opacity-50 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+                >
+                  <img
+                    src="../dist/img/logo/facebook.png"
+                    class="w-16"
+                    alt="Facebook"
+                  />
+                </a>
+                <!-- Instagram -->
+                <a
+                  href="#"
+                  class="mx-4 max-w-[120px] py-4 opacity-50 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+                >
+                  <img
+                    src="../dist/img/logo/instagram.png"
+                    class="w-16"
+                    alt="Instagram"
+                  />
+                </a>
+                <!-- Whatsapp -->
+                <a
+                  href="#"
+                  class="mx-4 max-w-[120px] py-4 opacity-50 transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+                >
+                  <img
+                    src="../dist/img/logo/whatsapp.png"
+                    class="w-16"
+                    alt="Whatsapp"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- All Rights Reserved -->
+      <div class="container mx-auto py-2 border-t-2">
+        <p class="text-center font-light text-xs md:text-base">
+          © All Rights Reserved
+          <!-- Year -->
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          <span class="font-medium">| PT. Techformation Engineering</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back to top Start -->
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-[99] h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+      id="to-top"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-l-2 border-t-2"></span>
+    </a>
+    <!-- Back to top End -->
+
+    <script src="../dist/js/header-footer.js"></script>
+    <script src="../dist/js/service/index.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
