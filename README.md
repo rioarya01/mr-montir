@@ -8,7 +8,7 @@
     💻 Project Studi Kelayakan Bisnis
   </h1>
   <p>
-    Project UAS pada mata kuliah Studi Kelayakan Bisnis Kelas O. Project ini bertema startup digital yang bernama Mr. Montir.<br>
+    Project UAS pada mata kuliah Studi Kelayakan Bisnis Kelas O. Project ini bertema startup digital yang bernama Mr. Montir.
     Mr. Montir merupakan sebuah bengkel digital yang menyediakan jasa service kendaraan dan penjualan alat-alat kendaraan seperti
     sparepart, ban, oli, aki dan lainnya. Web Mr. montir ini dibuat hanya dengan HTML, CSS, Javascript dan bantuan Framework Tailwind CSS. Selain itu menggunakan bantuan library
     seperti flowbite, swiper js, dan sweet alert 2.
