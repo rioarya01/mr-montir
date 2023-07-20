@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/rioarya01/mr-montir/main/mockup-readme.png?token=GHSAT0AAAAAACFJMAKWUG34TWIAFZ6FXUGIZFYDR4A" width="800" />
+  <img src="https://github.com/rioarya01/mr-montir/blob/main/mockup-readme.png" width="800" />
 </div>
 <br/>
 
