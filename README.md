@@ -1,22 +1,19 @@
 <div align="center">
-  <img src="https://github.com/rioarya01/mr-montir/blob/main/mockup-readme.png" width="800" />
+  <img src="https://github.com/rioarya01/mr-montir/blob/main/mockup-readme.png"/>
 </div>
 <br/>
 
-<div align="center">
-  <h1>
+<div>
+  <h1  align="center">
     💻 Project Studi Kelayakan Bisnis
   </h1>
   <p>
     Project UAS pada mata kuliah Studi Kelayakan Bisnis Kelas O. Project ini bertema startup digital yang bernama Mr. Montir.
     Mr. Montir merupakan sebuah bengkel digital yang menyediakan jasa service kendaraan dan penjualan alat-alat kendaraan seperti
     sparepart, ban, oli, aki dan lainnya. Web Mr. montir ini dibuat hanya dengan HTML, CSS, Javascript dan bantuan Framework Tailwind CSS. Selain itu menggunakan bantuan library
-    seperti flowbite, swiper js, dan sweet alert 2.
+    seperti flowbite, swiper js, dan sweet alert 2. <br>
+    Link: https://mrmontir.vercel.app
   </p>
-</div>
-
-<div align="center">
-  Link : https://mrmontir.vercel.app/<br><br>
 </div>
 
 *Sumber Referensi :*<br>
