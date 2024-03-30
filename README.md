@@ -12,7 +12,8 @@
     Mr. Montir merupakan sebuah bengkel digital yang menyediakan jasa service kendaraan dan penjualan alat-alat kendaraan seperti
     sparepart, ban, oli, aki dan lainnya. Web Mr. montir ini dibuat hanya dengan HTML, CSS, Javascript dan bantuan Framework Tailwind CSS. Selain itu menggunakan bantuan library
     seperti flowbite, swiper js, dan sweet alert 2. <br>
-    Link: https://mrmontir.vercel.app
+    Link: https://mrmontir.vercel.app <br>
+    Pdf UAS: https://drive.google.com/file/d/1S6EqKN9stEIwaWBWtFnJw42SSp5i4NJL/view?usp=sharing
   </p>
 </div>
 
